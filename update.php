@@ -12,15 +12,15 @@ fclose($myfile);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Update</title>
 </head>
 
 <body>
   <h1><?php echo $terms; ?></h1>
   <form action="saveupdate.php" method="POST">
       <input type="hidden" name="terms" value="<?php echo $terms; ?>">
-      <textarea name="data" id="" cols="30" rows="10"><?php echo $data; ?></textarea>
-      <button type="submit">Save</button>
+      <textarea name="data" id="data" cols="30" rows="10"><?php echo $data; ?></textarea><br><br>
+      <button type="submit">Save</button><br><br>
     </form>
    
     <a href="index.php">Back</a>
